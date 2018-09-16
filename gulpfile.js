@@ -89,7 +89,7 @@ gulp.task("imgs", function () {
 
 gulp.task("files", function () {
   gulp.src(path.dev + "/**/*.{php,scss,js,svg,png,jpg}")
-    .pipe(connect.reload());
+    
 });
 
 gulp.task("json", function () {

@@ -1,0 +1,35 @@
+.sobre {
+   background: white;
+
+   .container{
+       display: flex;
+   }
+   .sobre-conteudo{
+       order: 2;
+   }
+   ul {
+       list-style-type: none;
+       margin-bottom: 30px;
+   }
+   li{
+       display: inline-block;
+       margin-right: 18px;
+   }
+   h2{
+       background: rgb(128, 128, 131);
+       color: white;
+       letter-spacing: 9px;
+       padding: 27px 51px;
+       display: inline-block;
+       margin-left: -118px;
+       margin-top: 88px;
+       margin-bottom: 18px;
+   }
+   span{
+       display: block;
+       margin-bottom: 33px;
+   }
+   figure{
+      order: 1;
+   }
+}
