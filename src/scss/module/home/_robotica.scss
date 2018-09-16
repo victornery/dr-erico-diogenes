@@ -1,0 +1,29 @@
+.robotica{
+    background-color: rgb(233, 233, 233);
+    background-image: url(../images/cirurgia-robotica.png);
+    background-position: center right ;
+    background-repeat: no-repeat;
+
+    height: 556px;
+}
+.robotica-conteudo p{
+    width: 60%;
+    line-height: 1.5;
+    margin-left: 34px;
+}
+.robotica-conteudo h2{
+    background: rgb(71, 101, 136);
+    color: white;
+    display: inline-block;
+    letter-spacing: 9px;
+
+    padding: 28px 64px;
+    margin-top: 45px;
+    margin-left: 34px;
+}
+.container{
+    display: flex;
+}
+.text1{
+    margin-top: 50px;
+}
