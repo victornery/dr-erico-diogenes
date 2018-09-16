@@ -1,0 +1,79 @@
+.rwmb-field {
+	display: table-row;
+}
+.rwmb-field.hidden {
+	display: none;
+}
+.rwmb-field.rwmb-heading-wrapper, .rwmb-field.rwmb-divider-wrapper, .rwmb-field.rwmb-custom_html-wrapper {
+	display: block;
+}
+.rwmb-label, .rwmb-input {
+	display: table-cell;
+	line-height: 1.3;
+}
+.rwmb-input:first-of-type {
+	float: none;
+}
+.rwmb-label {
+	width: 200px;
+	padding: 20px 10px 20px 0;
+	font-weight: bold;
+	font-size: 14px;
+}
+.rwmb-input {
+	margin-bottom: 9px;
+	padding: 15px 10px;
+	vertical-align: middle;
+}
+.rwmb-label ~ .rwmb-input {
+	width: auto;
+}
+.edit-tags-php .rwmb-clone {
+	background: #f1f1f1;
+}
+@media (max-width: 782px) {
+	.rwmb-input, .rwmb-label {
+		display: block;
+		width: auto;
+		vertical-align: middle;
+	}
+	.rwmb-label {
+		padding-top: 10px;
+		padding-bottom: 0;
+		border-bottom: 0;
+	}
+	.rwmb-input {
+		margin-bottom: 0;
+		padding-bottom: 6px;
+		padding-top: 4px;
+		padding-left: 0;
+	}
+}
+
+/* Fix style when use group and clone */
+.rwmb-group-wrapper .rwmb-label,
+.rwmb-group-wrapper .rwmb-input {
+	display: block;
+}
+
+.rwmb-group-wrapper > .rwmb-input:first-of-type {
+	padding-left: 220px;
+}
+
+.rwmb-field:not(.rwmb-group-wrapper) .rwmb-label,
+.rwmb-field:not(.rwmb-group-wrapper) .rwmb-input {
+	float: left;
+}
+
+#your-profile .rwmb-clone {
+	background-color: transparent;
+}
+
+#your-profile .rwmb-clone {
+	padding-right: 25px;
+	margin-right: 25px;
+}
+
+#your-profile .rwmb-group-collapsible > .rwmb-input > .rwmb-group-clone {
+	border-color: #ddd;
+}

@@ -1,0 +1,25 @@
+<section class="builder-options description description-wide">
+
+	<h4 class="custom-attributes__heading">Custom Attributes (<a href="http://www.metabox.io/docs/meta-box-builder#custom-attributes" target="_blank">see documentation <span class="dashicons dashicons-external custom-attributes__external-icon"></span></a>)</h4>
+
+	<table class="table custom-attributes__table" ng-show="active.##key_value##.length > 0">
+		<tbody>
+			<tr ng-repeat="query_arg in active.##key_value## track by $index">
+				<td class="col-xs-5" width="45%">
+					<input ng-keydown="navigate($event, active.id, $index, 'key')" ng-enter="addObject('##key_value##');" focus-on="{{active.id}}_key_{{$index}}" type="text" class="form-control col-sm-6 input-sm" ng-model="query_arg.key" placeholder="Enter key" />
+				</td>
+
+				<td class="col-xs-6" width="45%">
+					<input focus-on="{{active.id}}_value_{{$index}}" type="text" class="form-control col-sm-6 input-sm" ng-model="query_arg.value" placeholder="Enter value">
+				</td>
+
+				<td class="col-xs-1" width="5%">
+					<button type="button" class="button" ng-click="removeObject('##key_value##', $index);"><span class="dashicons dashicons-trash"></span></button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<button type="button" class="button custom-attributes__button" ng-click="addObject('##key_value##');">+ Attribute</button>
+
+</section>

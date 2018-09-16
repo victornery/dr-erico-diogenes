@@ -1,0 +1,31 @@
+.#{$prefix}-header {
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.nav {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+
+  @media (min-width: getVP(tablet)) {
+    flex-direction: row;
+  }
+
+  @include e('item') {
+    list-style: none;
+
+    @media (min-width: getVP(tablet)) {
+      padding: 0 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: getColor(menu);
+    }
+  }
+}

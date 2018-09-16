@@ -1,0 +1,15 @@
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        width: 100% / $i;
+    }
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    @media (min-width: getVP(tablet)) {
+        width: 100%;
+        max-width: 1000px;
+    }
+}

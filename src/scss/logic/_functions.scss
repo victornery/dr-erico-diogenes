@@ -1,0 +1,36 @@
+@function getColor($color) {
+    @return map-get($colors, $color);
+}
+
+@function getVP($vp) {
+    @return map-get($breakpoints, $vp);
+}
+
+@function rem($px) {
+    $rem: $px / 16px;
+    @return #{$rem}rem;
+}
+
+@mixin element($element) {
+    &__#{$element} {
+        @content;
+    }
+}
+
+@mixin modifier($modifier) {
+    &--#{$modifier} {
+        @content;
+    }
+}
+
+@mixin e($element) {
+    @include element($element)  {
+        @content;
+    }
+}
+
+@mixin m($modifier) {
+    @include modifier($modifier) {
+        @content;
+    }
+}
