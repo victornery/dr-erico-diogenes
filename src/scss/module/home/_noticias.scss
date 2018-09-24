@@ -1,23 +1,18 @@
-.noticias-conteudo h2{
+.ultimas-noticias h2{
     background: rgb(71, 101, 136);
     color: white;
     display: inline-block;
     letter-spacing: 9px;
     box-align: center;
-    margin: 45px 0 34px 0;
+    margin: 68px 273px 0 273px;
     padding: 28px 64px;
-    position: relative;
-    left: 160px;
-    
-
 }
 
 .noticias-conteudo {
 text-align: center;
-
 }
 
-li {
+.ultimas-noticias li{
     display: inline;
     margin: 10px;
 
@@ -31,7 +26,7 @@ line-height: 26px;
 text-align: left;
 }
 
-.cor {
+.cor{
     color: rgb(75,108,147);
 }
 
@@ -52,7 +47,8 @@ top: 40px;
 
 }
 
-ul{
+.ultimas-noticias ul{
     justify-content: space-around;
     display: flex;
+    margin:0 auto;
 }

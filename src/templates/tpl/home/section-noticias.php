@@ -1,10 +1,8 @@
-<div>
-
-    <section class="noticias-conteudo">
-        <h2>Últimas Notícias</h2>
-        <p class="blog-box">blog</p>
-
-        <ul class="container">
+<section>
+    <div class="container">
+      <div class="ultimas-noticias">
+         <h2>Últimas Notícias</h2>
+        <ul>
             <li>
 
                 <img src="<?php echo get_template_directory_uri() ?>/dist/images/cancer-prostata.png" alt="" />
@@ -27,8 +25,6 @@
             </li>
             
         </ul>
-        
-
-    </section>
-
-</div>
+        <div>
+    </div>
+</section>
