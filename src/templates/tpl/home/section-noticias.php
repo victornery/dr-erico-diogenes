@@ -1,7 +1,10 @@
-<section>
+<section class="noticias">
     <div class="container">
       <div class="ultimas-noticias">
-         <h2>Últimas Notícias</h2>
+      <div class="boxes">   
+      <h2>Últimas Notícias</h2>
+         <p class="blog-box">Blog</p>
+      </div>
         <ul>
             <li>
 

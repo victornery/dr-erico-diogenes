@@ -9,7 +9,11 @@
     color: white;
     letter-spacing: 9px;
 
-    margin: 39px 270px;
+    position: relative;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 38px auto;
 }
 .especialidades-topicos li{
     max-width: 100%;
@@ -32,4 +36,7 @@
     justify-content: space-around;
     margin-top: 15px;
     letter-spacing: 5px;
+}
+.especialidades-topicos{
+    width: 100%;
 }

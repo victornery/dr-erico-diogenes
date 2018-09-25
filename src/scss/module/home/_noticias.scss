@@ -4,8 +4,9 @@
     display: inline-block;
     letter-spacing: 9px;
     box-align: center;
-    margin: 68px 273px 0 273px;
+    position: relative;
     padding: 28px 64px;
+    margin: 0px auto;
 }
 
 .noticias-conteudo {
@@ -41,14 +42,23 @@ letter-spacing: 9px;
 padding: 10px;
 box-sizing: border-box;
 display: inline-block;
-position: relative;
-right: 180px;
-top: 40px;
 
+position: relative;
+margin: 0 auto;
+top: -20px;
 }
 
 .ultimas-noticias ul{
     justify-content: space-around;
     display: flex;
-    margin:0 auto;
+}
+.ultimas-noticias{
+    width: 100%;
+}
+.boxes{
+    display: flex;
+    flex-direction: column;
+}
+.noticias{
+    padding: 100px 0;
 }
