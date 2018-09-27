@@ -1,19 +1,23 @@
-.ultimas-noticias h2{
+.noticias-conteudo h2{
     background: rgb(71, 101, 136);
     color: white;
     display: inline-block;
     letter-spacing: 9px;
     box-align: center;
-    position: relative;
+    margin: 45px 0 34px 0;
     padding: 28px 64px;
-    margin: 0px auto;
+    position: relative;
+    left: 160px;
+    
+
 }
 
 .noticias-conteudo {
 text-align: center;
+
 }
 
-.ultimas-noticias li{
+li {
     display: inline;
     margin: 10px;
 
@@ -27,7 +31,7 @@ line-height: 26px;
 text-align: left;
 }
 
-.cor{
+.cor {
     color: rgb(75,108,147);
 }
 
@@ -42,23 +46,9 @@ letter-spacing: 9px;
 padding: 10px;
 box-sizing: border-box;
 display: inline-block;
-
 position: relative;
-margin: 0 auto;
-top: -20px;
+right: 180px;
+top: 40px;
+
 }
 
-.ultimas-noticias ul{
-    justify-content: space-around;
-    display: flex;
-}
-.ultimas-noticias{
-    width: 100%;
-}
-.boxes{
-    display: flex;
-    flex-direction: column;
-}
-.noticias{
-    padding: 100px 0;
-}
