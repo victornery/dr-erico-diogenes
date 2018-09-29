@@ -1,64 +1,48 @@
-.sobre {
-   background: white;
+.about {
+  padding: 50px 0 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
 
-   .container{
-       display: flex;
-   }
-   .sobre-conteudo{
-       order: 2;
-   }
-   ul{
-      display: flex;
-      justify-content: space-around;
-      @media (min-width:getVP(tablet)){
-      height: auto;
-      list-style-type: none;
-      margin-bottom: 30px;
-      box-align: center;
-
-      }
-    }
-   li{
-       height: auto;
-       display: inline-block;
-       margin-right: 18px;
-       align-items: center;
-
-      }
-   h2 {
-       max-width: 100%;
-       box-align: center;
-       background: rgb(128, 128, 131);
-       color: white;
-       letter-spacing: 9px;
-       padding: 27px 51px;
-       text-align: center;
-
-       @media (min-width:getVP(tablet)){
-       background: rgb(128, 128, 131);
-       color: white;
-       letter-spacing: 9px;
-       padding: 27px 51px;
-       display: inline-block;
-       margin-left: -118px;
-       margin-top: 88px;
-       margin-bottom: 18px;
-       }
-   }
-   span{
-       display: block;
-       margin-bottom: 33px;
-       text-align: center;
-   }
-
-   figure{
-      order: 1;
-   }
-   .dr-erico {
-     display: none;
-     @media (min-width:getVP(tablet)){
-       display: flex;
-     }
-   }
+  .container {
+    display: flex;
   }
 
+  &-body {
+    display: none;
+
+    @media (min-width: getVP(tablet)) {
+      display: block;
+    }
+  }
+
+  &-header {
+    ul {
+      margin: 20px 0;
+      li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+    }
+  }
+
+  &-title {
+    background: getColor(highlight);
+    display: inline-block;
+    position: relative;
+    font-weight: 400;
+    color: getColor(light);
+    padding: 20px 50px;
+    font-size: 28px;
+    letter-spacing: 5px;
+
+    @media (min-width: getVP(tablet)) {
+      margin-left: -70px;
+    }
+  }
+
+  &-info {
+    font-size: 13px;
+  }
+
+
+}

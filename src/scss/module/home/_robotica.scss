@@ -7,12 +7,12 @@
 
     height: 556px;
 
-    @media (min-width: getVP(tablet)){
+    @media (min-width: getVP(tablet)) {
       background-image: url(../images/cirurgia-robotica.png);
 
     }
 }
-.robotica-conteudo p{
+.robotica-conteudo p {
   display: flex;
   flex-direction: row;
 
@@ -23,7 +23,7 @@
     margin-left: 34px;
   }
 }
-.robotica-conteudo h2{
+.robotica-conteudo h2 {
     background: rgb(71, 101, 136);
     color: white;
     display: inline-block;
@@ -33,10 +33,8 @@
     margin-top: 45px;
     margin-left: 34px;
 }
-.container{
-    display: flex;
-}
-.text1{
+
+.text1 {
     margin-top: 50px;
     height: auto;
     max-width: 100%;
@@ -47,6 +45,5 @@
   max-width: 100%;
   display: inline;
   height: auto;
-
   }
 
