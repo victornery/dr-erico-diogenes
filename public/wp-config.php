@@ -20,7 +20,7 @@
 
 // ** Configurações do MySQL - Você pode pegar estas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
-define('DB_NAME', 'drerico');
+define('DB_NAME', 'dr-erico');
 
 /** Usuário do banco de dados MySQL */
 define('DB_USER', 'root');
@@ -29,10 +29,10 @@ define('DB_USER', 'root');
 define('DB_PASSWORD', '');
 
 /** Nome do host do MySQL */
-define('DB_HOST', 'localhost');
+define('DB_HOST', '127.0.0.1');
 
 /** Charset do banco de dados a ser usado na criação das tabelas. */
-define('DB_CHARSET', 'utf8');
+define('DB_CHARSET', 'utf8mb4');
 
 /** O tipo de Collate do banco de dados. Não altere isso se tiver dúvidas. */
 define('DB_COLLATE', '');
@@ -50,14 +50,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'coloque a sua frase única aqui');
-define('SECURE_AUTH_KEY',  'coloque a sua frase única aqui');
-define('LOGGED_IN_KEY',    'coloque a sua frase única aqui');
-define('NONCE_KEY',        'coloque a sua frase única aqui');
-define('AUTH_SALT',        'coloque a sua frase única aqui');
-define('SECURE_AUTH_SALT', 'coloque a sua frase única aqui');
-define('LOGGED_IN_SALT',   'coloque a sua frase única aqui');
-define('NONCE_SALT',       'coloque a sua frase única aqui');
+define('AUTH_KEY',         'cE(=H=R>JheI~&yZ:LbSCQHV`6Ax].;_>g9l{vs+:}xXwq6-L,Td>00 QFT9Pxkh');
+define('SECURE_AUTH_KEY',  'RXfi][cU`Kt.}@j0<4RX}Yl_Pw%/+8Pnfctn_umv-jQ5[ O[Xw9=}Hb:^4~AT=}$');
+define('LOGGED_IN_KEY',    'ir0ZJo@S})0kQmd~$_wj:2+UzT~~o49xUHM&qa=C4]W%M8UBNN0|j Im_`?_,Hu?');
+define('NONCE_KEY',        '*I{Sg[{w|iZ@&{Tv!{(}o<9|uPbaOL,_~hxpfJfV(1 Z=Y1S_$fEfVX6hf=&K@X*');
+define('AUTH_SALT',        'kONvJ3X@[YH@KS(ne8FAiI(0_0hOTU-O^lIkLl[kwHU-gC3U48r=mV&MB{`&MtNo');
+define('SECURE_AUTH_SALT', 'lCkLpQVd;{wVJZ3h]#+(uar d%Q=]}Ye279s.{o_(k69r()H|_Ut}m[RZWejLwF/');
+define('LOGGED_IN_SALT',   '?Vu%_>))uSNHc^;$lCwFpU7sy G}tA#lvo>J+vlti4b`Yj*uAOg)ja YKqnsUA15');
+define('NONCE_SALT',       '=3C2`#7OI6v2)Ogcj$D06wT=0Q7n@/Mi%Ylp/p8rf;@pC>b-GVabyV]VmY[Bg WZ');
 
 /**#@-*/
 
@@ -67,7 +67,7 @@ define('NONCE_SALT',       'coloque a sua frase única aqui');
  * Você pode ter várias instalações em um único banco de dados se você der
  * um prefixo único para cada um. Somente números, letras e sublinhados!
  */
-$table_prefix  = 'wp_';
+$table_prefix  = 'global_wp_';
 
 /**
  * Para desenvolvedores: Modo de debug do WordPress.
@@ -83,7 +83,7 @@ $table_prefix  = 'wp_';
  * @link https://codex.wordpress.org/pt-br:Depura%C3%A7%C3%A3o_no_WordPress
  */
 define('WP_DEBUG', false);
-
+define('WPCF7_AUTOP', false);
 /* Isto é tudo, pode parar de editar! :) */
 
 /** Caminho absoluto para o diretório WordPress. */

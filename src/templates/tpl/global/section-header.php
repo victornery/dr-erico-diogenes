@@ -4,6 +4,6 @@
     <h1 class="global-header">
       <img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo.png" alt="Logotipo do Dr. Érico Diógenes">
     </h1>
-    <?php bem_menu(); ?>
+    <?php wp_nav_menu(); ?>
   </div>
 </header>

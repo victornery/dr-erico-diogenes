@@ -28,8 +28,11 @@
     border-width: 4px;
 }
 .especialidades-topicos ul{
+
+  @media (min-width:getVP(tablet)){
     display: flex;
     justify-content: space-around;
+  }
 }
 .especialidades-topicos p{
     display: flex;
