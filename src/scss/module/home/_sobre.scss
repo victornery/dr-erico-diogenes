@@ -34,6 +34,7 @@
     padding: 20px 50px;
     font-size: 28px;
     letter-spacing: 5px;
+    transition: 1s background;
 
     @media (min-width: getVP(tablet)) {
       margin-left: -70px;
