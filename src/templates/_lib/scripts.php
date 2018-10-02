@@ -2,6 +2,8 @@
 
 function call_scripts() {
     wp_enqueue_style('css-main', get_template_directory_uri() . '/dist/css/main.min.css', array(), '', null);
+    wp_register_script('glide', get_template_directory_uri() . '/dist/js/libs/glide.js', array(), '', true);
+    wp_enqueue_script('glide');
     wp_register_script('main', get_template_directory_uri() . '/dist/js/main.min.js', array(), '', true);
     wp_enqueue_script('main');
 }

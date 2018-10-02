@@ -1,0 +1,33 @@
+.slide {
+  overflow: hidden;
+}
+
+.glide__slides {
+  display: flex;
+  position: relative;
+
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: 550px;
+    max-height: 100%;
+    object-fit: cover;
+  }
+
+  .glide__slide {
+    position: relative;
+  }
+
+  .slide__content {
+    color: #64899f;
+    letter-spacing: 10px;
+    background: #fff;
+    position: absolute;
+    bottom: 70px;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 19px;
+    padding: 13px 50px;
+    text-align: center;
+  }
+}

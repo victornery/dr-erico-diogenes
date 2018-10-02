@@ -2,7 +2,9 @@
 <header class="global-header">
   <div class="container">
     <h1 class="global-header">
-      <img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo.png" alt="Logotipo do Dr. Érico Diógenes">
+      <a href="<?php echo home_url(); ?>">
+        <img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo-nova.png" alt="Logotipo do Dr. Érico Diógenes">
+      </a>
     </h1>
 
     <div class="menu">

@@ -10,11 +10,28 @@
       background: linear-gradient(to right, rgba(92,110,70,1) 50%, rgba(104,153,46,1) 50%);
     }
 
+    .container {
+      display: flex;
+      flex-direction: column;
+
+      @media (min-width: getVP(tablet)) {
+        flex-direction: row;
+      }
+    }
+
     span {
       width: 100%;
       color: white;
       font-size: 20px;
       line-height: 1.5;
+
+      &:first-child {
+        margin-bottom: 30px;
+
+        @media (min-width: getVP(tablet)) {
+          margin-bottom: 0;
+        }
+      }
 
       @media (min-width: getVP(tablet)) {
         width: 50%;

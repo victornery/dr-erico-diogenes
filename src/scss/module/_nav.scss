@@ -69,9 +69,10 @@
     text-align: center;
     margin: 0 auto;
     font-size: 20px;
+    letter-spacing: 1px;
 
     @media (min-width: getVP(tablet)) {
-      padding: 0 10px;
+      padding: 0 5px;
       font-size: 16px;
     }
 
@@ -79,10 +80,20 @@
       text-decoration: none;
       color: getColor(light);
       text-align: center;
+      padding-bottom: 5px;
+      transition: .5s all;
+
+      &:hover {
+        border-bottom: 2px solid getColor(light);
+      }
 
       @media (min-width: getVP(tablet)) {
         color: getColor(menu);
         text-align: inherit;
+
+        &:hover {
+          border-bottom: 2px solid getColor(theme);
+        }
       }
     }
 

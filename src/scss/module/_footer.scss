@@ -44,6 +44,7 @@
     list-style: none;
     width: 100%;
     display: block;
+    line-height: 1.5;
 
     @media (min-width: getVP(tablet)) {
       display: inline-block;
@@ -55,6 +56,10 @@
     a {
       color: #545454;
       text-decoration: none;
+    }
+    span {
+      margin: 15px 0;
+      line-height: 1.5;
     }
   }
 }

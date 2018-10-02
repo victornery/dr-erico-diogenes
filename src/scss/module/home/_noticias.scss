@@ -66,6 +66,10 @@
 }
 .ultimas-noticias {
     width: 100%;
+
+  p {
+    text-align: justify;
+  }
 }
 .boxes {
     display: flex;

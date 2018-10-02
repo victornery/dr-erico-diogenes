@@ -29,18 +29,26 @@
     display: inline-block;
     letter-spacing: 9px;
     text-align: center;
-    padding: 28px 64px;
-    margin-top: 45px;
-    margin-left: 34px;
+    padding: 28px 16px;
+    margin: 45px auto 0;
+    max-width: 100%;
+
+    @media (min-width: getVP(tablet)) {
+      margin-left: 34px;
+      padding: 28px 64px;
+    }
 }
 
 .text1 {
-    margin-top: 50px;
-    height: auto;
-    max-width: 100%;
-    display: inline;
+  margin-top: 25px;
+  max-width: 100%;
+  display: inline;
 
+  @media (min-width: getVP(tablet)) {
+    margin-top: 50px;
+  }
 }
+
 .text2 {
   max-width: 100%;
   display: inline;

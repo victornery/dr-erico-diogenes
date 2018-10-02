@@ -17,3 +17,18 @@ const handleNav = () => {
 }
 
 handleNav();
+
+const handleSliders = () => {
+  const highlight = '.slide';
+  if (document.querySelector(highlight)) {
+    new Glide(highlight, {
+      type: 'slider',
+      startAt: 0,
+      perView: 1,
+      autoplay: 3000,
+      keyboard: true,
+    }).mount();
+  }
+};
+
+handleSliders();
