@@ -1,7 +1,7 @@
 <?php get_template_part('tpl/global/html','head'); ?>
 <header class="global-header">
   <div class="container">
-    <h1 class="global-header">
+    <h1 class="global-header--logo">
       <a href="<?php echo home_url(); ?>">
         <img src="<?php echo get_template_directory_uri(); ?>/dist/images/logo-nova.png" alt="Logotipo do Dr. Érico Diógenes">
       </a>

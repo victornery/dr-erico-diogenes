@@ -1,0 +1,17 @@
+.btn-rm {
+  text-decoration: none;
+  color: #fff;
+  background: getColor(theme);
+  padding: 5px 15px;
+  text-align: center;
+  line-height: 1;
+  border-radius: 30px;
+  transition: .5s all;
+  display: inline-block;
+  position: relative;
+  margin-top: 10px;
+  
+  &:hover {
+    background: darken(getColor(theme), 5%);
+  }
+}

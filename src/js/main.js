@@ -20,6 +20,7 @@ handleNav();
 
 const handleSliders = () => {
   const highlight = '.slide';
+
   if (document.querySelector(highlight)) {
     new Glide(highlight, {
       type: 'slider',

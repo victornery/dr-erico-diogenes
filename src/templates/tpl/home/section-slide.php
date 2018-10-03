@@ -13,7 +13,7 @@
   </div>
 </section>
 <aside class="agendamento">
-  <a href="#">
+  <a href="https://www.doctoralia.com.br/medico/diogenes+erico-14805967" rel="noopener" target="_blank">
     <span>Agendar consulta</span>
     <small>by</small>
     <img src="<?php echo get_template_directory_uri() ?>/dist/images/doctoralia.png" alt="Agende sua consulta no Doctoralia com o Dr. Érico Diógenes">

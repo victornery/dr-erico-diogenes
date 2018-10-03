@@ -1,9 +1,16 @@
 .#{$prefix}-header {
-  position: relative;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 5;
+  top: 0;
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+  &--logo {
+    transform: scale(.9);
   }
 }
 
@@ -73,7 +80,7 @@
 
     @media (min-width: getVP(tablet)) {
       padding: 0 5px;
-      font-size: 16px;
+      font-size: 14px;
     }
 
     a {
