@@ -1,29 +1,57 @@
 .robotica{
+    max-width: 100%;
     background-color: rgb(233, 233, 233);
-    background-image: url(../images/cirurgia-robotica.png);
     background-position: center right ;
     background-repeat: no-repeat;
+    object-fit: cover;
 
     height: 556px;
+
+    @media (min-width: getVP(tablet)) {
+      background-image: url(../images/cirurgia-robotica.png);
+
+    }
 }
-.robotica-conteudo p{
+.robotica-conteudo p {
+  display: flex;
+  flex-direction: row;
+
+  @media (min-width:getVP(tablet)){
+
     width: 60%;
     line-height: 1.5;
     margin-left: 34px;
+  }
 }
-.robotica-conteudo h2{
+.robotica-conteudo h2 {
     background: rgb(71, 101, 136);
     color: white;
     display: inline-block;
     letter-spacing: 9px;
+    text-align: center;
+    padding: 28px 16px;
+    margin: 45px auto 0;
+    max-width: 100%;
 
-    padding: 28px 64px;
-    margin-top: 45px;
-    margin-left: 34px;
+    @media (min-width: getVP(tablet)) {
+      margin-left: 34px;
+      padding: 28px 64px;
+    }
 }
-.container{
-    display: flex;
-}
-.text1{
+
+.text1 {
+  margin-top: 25px;
+  max-width: 100%;
+  display: inline;
+
+  @media (min-width: getVP(tablet)) {
     margin-top: 50px;
+  }
 }
+
+.text2 {
+  max-width: 100%;
+  display: inline;
+  height: auto;
+  }
+

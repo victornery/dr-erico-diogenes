@@ -21,8 +21,8 @@
           <h2 class="global-footer__title">Onde estamos</h2>
           <address>
             <span>Av. Dom Luís, 1200 - sala 701 - Torre 2
-              Aldeota, Fortaleza - CE, 60160-230
-              (85) zapzap
+              Aldeota, Fortaleza - CE, 60160-230 <br>
+              (85) 4000.0000 | 90000.0000
             </span>
           </address>
         </div>

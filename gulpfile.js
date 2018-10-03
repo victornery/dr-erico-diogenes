@@ -1,19 +1,18 @@
 "use strict";
 
-let gulp = require("gulp");
-let sass = require("gulp-sass");
-let babel = require("gulp-babel");
-let postcss = require("gulp-postcss");
-let imagemin = require("gulp-imagemin");
-let concat = require("gulp-concat");
-let autoprefixer = require("autoprefixer");
-let uglify = require("gulp-uglify");
-let rename = require("gulp-rename");
-let browserSync = require("browser-sync").create();
-let clean = require("gulp-clean");
-let svgmin = require("gulp-svgmin");
-let fs = require("fs");
-let runSequence = require("run-sequence").use(gulp);
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const babel = require("gulp-babel");
+const postcss = require("gulp-postcss");
+const imagemin = require("gulp-imagemin");
+const concat = require("gulp-concat");
+const autoprefixer = require("autoprefixer");
+const uglify = require("gulp-uglify");
+const rename = require("gulp-rename");
+const browserSync = require('browser-sync').create();
+const svgmin = require("gulp-svgmin");
+const fs = require("fs");
+const runSequence = require("run-sequence").use(gulp);
 
 const path = {
   dev: "./src",
@@ -27,6 +26,7 @@ gulp.task("build", function () {
 gulp.task("templates", function () {
   return gulp.src(path.dev + "/templates/**/*.{php,css}")
     .pipe(gulp.dest(path.prod))
+    .pipe(browserSync.stream());
 });
 
 gulp.task("scss", function () {
@@ -58,7 +58,8 @@ gulp.task("js", function () {
     }))
     .pipe(concat("main.min.js"))
     .pipe(uglify())
-    .pipe(gulp.dest(path.prod + "/dist/js/"));
+    .pipe(gulp.dest(path.prod + "/dist/js/"))
+    .pipe(browserSync.stream());
 });
 
 gulp.task("libs", function () {
@@ -85,11 +86,7 @@ gulp.task("imgs", function () {
       ])
     )
     .pipe(gulp.dest(path.prod + "/dist/images"))
-});
-
-gulp.task("files", function () {
-  gulp.src(path.dev + "/**/*.{php,scss,js,svg,png,jpg}")
-    
+    .pipe(browserSync.stream());
 });
 
 gulp.task("json", function () {
@@ -97,26 +94,18 @@ gulp.task("json", function () {
     .pipe(gulp.dest(path.prod + "/json/"))
 })
 
-gulp.task("clean", function () {
-  return gulp.src(path.prod, {
-    read: false
-  })
-    .pipe(clean());
-})
+gulp.task('serve', ['scss', 'js', 'templates', 'imgs'], function () {
 
-gulp.task('serve', ['scss'], function () {
   browserSync.init({
-    server: {
-      baseDir: '/'
-    }
+    server: "./public"
   });
+
+  gulp.watch("src/**/*.scss", ['scss']).on('change', browserSync.reload);
+  gulp.watch("src/**/*.js", ['js']).on('change', browserSync.reload);
+  gulp.watch("src/**/*.{png,gif,jpg,xml,svg,ico,json}").on('change', browserSync.reload);
 });
 
-gulp.task("watch", function () {
-  gulp.watch(path.dev + "/**/*.{php,scss,js,svg,png,jpg}", ["files"]);
-});
-
-gulp.task("default", ["watch", "serve"], function () {
+gulp.task("default", ["serve"], function () {
   gulp.watch(path.dev + "/scss/**/*.scss", ["scss"]);
   gulp.watch(path.dev + "/templates/**/*.php", ["templates"]);
   gulp.watch(path.dev + "/js/**/*.js", ["js"]);
@@ -124,5 +113,4 @@ gulp.task("default", ["watch", "serve"], function () {
   gulp.watch(path.dev + "/svg/*.svg", ["svg"]);
   gulp.watch(path.dev + "/json/*.json", ["json"]);
   gulp.watch(path.dev + "/images/**", ["imgs"]);
-  gulp.watch(path.dev, ["files"]);
 });

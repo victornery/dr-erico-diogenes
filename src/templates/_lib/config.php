@@ -24,7 +24,7 @@ require_once locate_template('/_lib/ajax.php');//...................FUNÇÕES AJ
 //=========================================================================================
 
 function blog_favicon() {
-  echo '<link rel="Shortcut Icon" type="image/x-icon" href="'.get_template_directory_uri().'/_lib/_admin/favicon.png" />';
+  echo '<link rel="Shortcut Icon" type="image/x-icon" href="'.get_template_directory_uri().'/_lib/_admin/favicon2.png" />';
 }
 add_action('wp_head', 'blog_favicon');
 

@@ -4,6 +4,8 @@ $colors: (
   section-dark: #e9e9e9,
   highlight: #808083,
 
+  light: #fff,
+
   footer: #f4f4f4,
   footer-title: #1e2938,
   footer-default: #545454,
@@ -13,6 +15,7 @@ $colors: (
 );
 
 $breakpoints: (
-  tablet: "768px",
+  tablet: "920px",
+  notebook: "900px",
   desktop: "1100px"
 );

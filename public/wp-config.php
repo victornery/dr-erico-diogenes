@@ -1,4 +1,7 @@
 <?php
+/** Enable W3 Total Cache */
+define('WP_CACHE', true); // Added by W3 Total Cache
+
 /**
  * As configurações básicas do WordPress
  *
@@ -20,7 +23,7 @@
 
 // ** Configurações do MySQL - Você pode pegar estas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
-define('DB_NAME', 'dr-erico-diogenes');
+define('DB_NAME', 'dr-erico');
 
 /** Usuário do banco de dados MySQL */
 define('DB_USER', 'root');
@@ -29,7 +32,7 @@ define('DB_USER', 'root');
 define('DB_PASSWORD', '');
 
 /** Nome do host do MySQL */
-define('DB_HOST', 'localhost');
+define('DB_HOST', '127.0.0.1');
 
 /** Charset do banco de dados a ser usado na criação das tabelas. */
 define('DB_CHARSET', 'utf8mb4');
@@ -50,14 +53,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'hXTwyjNL|*H/{DN.J>Q^vjgB;sNnO|:^?D`Kvj2O%Cq/7:K)/T*f_ML^0X-u@6!D');
-define('SECURE_AUTH_KEY',  'y?r6?b[vV[V_Fw?~q1[abbzpAp*+d*1,4Xur<Tqnj[Ka-ZM1#5`j*TV/W1JgMoo}');
-define('LOGGED_IN_KEY',    'Z9a&zoC)XrK;N#fpI,e[;7#h-d?psPFrR2nL+slG kCwUElJ}o_YcS2QOyw K[Y%');
-define('NONCE_KEY',        'mj(>D4B#f?;z9OYAIp]{:h2wk,u Kabi>4=];{1-ZMR` u#up. hYmr<+E?D&1Zm');
-define('AUTH_SALT',        'RWK;!$v6H$Q?J<XQ%DMG@$0T-.(&fR5e/Z=k,|Age >;we$&?N8u](:_HS/c)bDo');
-define('SECURE_AUTH_SALT', '6*Kmp=OeiNIWYb^H]*ydfJI@/-)Hv>WT(PpId=T*]ov;Dydtv&*h>es@P>O2TJCJ');
-define('LOGGED_IN_SALT',   '%LS7ETA,R{GoMiG33S|Tn>B>3PrxzFYTGRC@z:BiNfE(X^vXIR7A8zdS7/amdQ#F');
-define('NONCE_SALT',       '>%:kfu^$_bsMRFM4#+;*Ty@t*4z>W>r[?i2MKRS xl+.|znCj<{!P-.xG.|d|.!C');
+define('AUTH_KEY',         'cE(=H=R>JheI~&yZ:LbSCQHV`6Ax].;_>g9l{vs+:}xXwq6-L,Td>00 QFT9Pxkh');
+define('SECURE_AUTH_KEY',  'RXfi][cU`Kt.}@j0<4RX}Yl_Pw%/+8Pnfctn_umv-jQ5[ O[Xw9=}Hb:^4~AT=}$');
+define('LOGGED_IN_KEY',    'ir0ZJo@S})0kQmd~$_wj:2+UzT~~o49xUHM&qa=C4]W%M8UBNN0|j Im_`?_,Hu?');
+define('NONCE_KEY',        '*I{Sg[{w|iZ@&{Tv!{(}o<9|uPbaOL,_~hxpfJfV(1 Z=Y1S_$fEfVX6hf=&K@X*');
+define('AUTH_SALT',        'kONvJ3X@[YH@KS(ne8FAiI(0_0hOTU-O^lIkLl[kwHU-gC3U48r=mV&MB{`&MtNo');
+define('SECURE_AUTH_SALT', 'lCkLpQVd;{wVJZ3h]#+(uar d%Q=]}Ye279s.{o_(k69r()H|_Ut}m[RZWejLwF/');
+define('LOGGED_IN_SALT',   '?Vu%_>))uSNHc^;$lCwFpU7sy G}tA#lvo>J+vlti4b`Yj*uAOg)ja YKqnsUA15');
+define('NONCE_SALT',       '=3C2`#7OI6v2)Ogcj$D06wT=0Q7n@/Mi%Ylp/p8rf;@pC>b-GVabyV]VmY[Bg WZ');
 
 /**#@-*/
 
@@ -67,7 +70,7 @@ define('NONCE_SALT',       '>%:kfu^$_bsMRFM4#+;*Ty@t*4z>W>r[?i2MKRS xl+.|znCj<{!
  * Você pode ter várias instalações em um único banco de dados se você der
  * um prefixo único para cada um. Somente números, letras e sublinhados!
  */
-$table_prefix  = 'create_wp_';
+$table_prefix  = 'global_wp_';
 
 /**
  * Para desenvolvedores: Modo de debug do WordPress.
@@ -83,7 +86,7 @@ $table_prefix  = 'create_wp_';
  * @link https://codex.wordpress.org/pt-br:Depura%C3%A7%C3%A3o_no_WordPress
  */
 define('WP_DEBUG', false);
-
+define('WPCF7_AUTOP', false);
 /* Isto é tudo, pode parar de editar! :) */
 
 /** Caminho absoluto para o diretório WordPress. */

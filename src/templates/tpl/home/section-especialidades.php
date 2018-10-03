@@ -2,29 +2,24 @@
   <div class="container">
     <div class="especialidades-topicos">
     <h2>Especialidades</h2>
-    <nav>
     <ul>
-    <li>
-      <img src="<?php echo get_template_directory_uri() ?>/dist/images/cirurgia-robotica-especialidades.png" alt="Cirurgia Robótica">
-      <p>Cir. Robótica</p>
-    </li>
-
-    <li>
+      <li>
+        <img src="<?php echo get_template_directory_uri() ?>/dist/images/cirurgia-robotica-especialidades.png" alt="Cirurgia Robótica">
+        <p>Cir. Robótica</p>
+      </li>
+      <li>
         <img src="<?php echo get_template_directory_uri() ?>/dist/images/urooncologia.png" alt="Urooncologia">
         <p>Urooncologia</p>
-    </li>
-
-    <li>
+      </li>
+      <li>
         <img src="<?php echo get_template_directory_uri() ?>/dist/images/endorologia.png" alt="Endorologia">
         <p>Endorologia</p>
-    </li>
-
-    <li>
+      </li>
+      <li>
         <img src="<?php echo get_template_directory_uri() ?>/dist/images/laparoscopia.png" alt="Laparoscopia">
         <p>Laparoscopia</p>
-    </li>
+      </li>
     </ul>
-    </nav>
     </div>
   </div>
 </section>

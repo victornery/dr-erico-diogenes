@@ -1,6 +1,65 @@
 .#{$prefix}-footer {
-  background-color: rgba(red, .5);
-
+  background: #f4f4f4;
   padding: 60px 0;
 
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: getVP(tablet)) {
+      flex-direction: row;
+    }
+  }
+
+  @include e('item') {
+    width: 100%;
+
+    address {
+      max-width: 35ch;
+      color: #535353;
+
+      font: {
+        style: normal;
+      }
+    }
+
+    @media (min-width: getVP(tablet)) {
+      width: 50%;
+    }
+  }
+
+  @include e('title') {
+    font: {
+      size: 28px;
+      weight: 400;
+    }
+  }
+
+}
+
+.#{$prefix}-links {
+  margin: 15px 0;
+
+  li {
+    list-style: none;
+    width: 100%;
+    display: block;
+    line-height: 1.5;
+
+    @media (min-width: getVP(tablet)) {
+      display: inline-block;
+      width: 49%;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      color: #545454;
+      text-decoration: none;
+    }
+    span {
+      margin: 15px 0;
+      line-height: 1.5;
+    }
+  }
 }
