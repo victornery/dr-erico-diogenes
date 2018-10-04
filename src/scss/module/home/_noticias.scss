@@ -25,6 +25,15 @@
     max-height: 220px;
   }
 
+  a {
+    text-decoration: none;
+    color: getColor(theme);
+  }
+
+  .btn-rm {
+    color: #fff;
+  }
+
   @media (min-width: getVP(tablet)) {
     width: calc(100% / 3);
   }

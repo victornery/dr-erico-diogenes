@@ -8,9 +8,10 @@
   border-radius: 30px;
   transition: .5s all;
   display: inline-block;
-  position: relative;
-  margin-top: 10px;
-  
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-left: 13px;
+
   &:hover {
     background: darken(getColor(theme), 5%);
   }

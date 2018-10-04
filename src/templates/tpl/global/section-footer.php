@@ -2,6 +2,21 @@
 
   <footer>
 
+  <!-- <div class="modal">
+    <div class="modal-box">
+
+      <div class="modal-close"></div>
+      <?php //echo get_post_field('post_content', $post_id); ?>
+      <h3 class="modal-title">Lista de Selecionados da Oportunize</h3>
+      <p class="modal-subtitle">Confira a Lista de Selecionados na Primeira Fase do Processo Seletivo 2019.</p>
+
+      <div class="modal-content">
+        Teste da Lista de Aprovados!!! :-P
+      </div>
+
+    </div>
+  </div> -->
+
     <div class="global-footer">
       <div class="container">
 
@@ -29,6 +44,9 @@
         </div>
 
       </div>
+    </div>
+    <div class="copyright">
+      <span>Todos os direitos reservados ao Dr. Érico Diógenes</span>
     </div>
 
   </footer>

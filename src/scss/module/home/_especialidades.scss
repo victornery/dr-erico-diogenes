@@ -24,10 +24,12 @@
 .especialidades-topicos li{
     max-width: 100%;
     display: inline-block;
+    margin: 0 auto !important;
+    text-align: center;
 }
 .especialidades-topicos img{
-    width: 203px;
-    height: 198px;
+    width: 203px !important;
+    height: 198px !important;
     border-radius: 100%;
     border-style: double;
     border-color: rgb(224, 224, 224);
@@ -40,12 +42,118 @@
     justify-content: space-around;
   }
 }
+
 .especialidades-topicos p{
     display: flex;
     justify-content: space-around;
     margin-top: 15px;
-    letter-spacing: 5px;
+    letter-spacing: 1px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    text-align: center;
 }
 .especialidades-topicos{
     width: 100%;
+}
+
+.especialidades-carrosel {
+  overflow: hidden;
+}
+
+.modal {
+  position: fixed;
+  background: rgba(0,0,0,.5);
+  width: 100%;
+  height: 100%;
+  z-index: 35;
+  display: block;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s all;
+
+  &-box {
+    width: 600px;
+    height: 500px;
+    max-width: 90%;
+    position: relative;
+    background: #fff;
+    border-top: 10px solid #fccd10;
+    border-radius: 5px;
+    top: 50%;
+    opacity: 0;
+    transition: .6s all;
+    transform: translateY(-50%) scale(.9);
+    margin: 0 16px;
+
+    @media (min-width: getVP(tablet)) {
+      margin: 0 auto;
+    }
+  }
+
+  &-title {
+    margin-bottom: 0;
+    padding: 0 10px;
+
+    letter-spacing: 1px;
+    font-size: 25px;
+    text-align: center;
+  }
+
+  &-subtitle {
+    margin: 0;
+    padding: 5px 10px 25px;
+    font-size: 16px;
+  }
+
+  &-content {
+    width: 100%;
+    padding: 20px;
+    background: #f1f1f1;
+  }
+
+  &-close {
+    width: 40px;
+    height: 40px;
+    background: getColor(theme);
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.2);
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    position: absolute;
+    right: -16px;
+    top: -25px;
+
+    &::after, &::before {
+      content: '';
+      width: 3px;
+      height: 20px;
+      background: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+
+    &::after {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    &::before {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+}
+
+.open-modal {
+  .modal {
+    visibility: visible;
+    opacity: 1;
+  }
+  .modal-box {
+    opacity: 1;
+    transform: translateY(-50%) scale(1);
+  }
 }

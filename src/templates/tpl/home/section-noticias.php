@@ -6,25 +6,16 @@
         <p class="blog-box">Blog</p>
       </div>
       <ul>
-
-        <li>
-          <img src="<?php echo get_template_directory_uri() ?>/dist/images/cancer-prostata.png" alt="" />
-          <h1 class="noticias-titulo">A robótica é a evidência do futuro da medicina.</h1>
-          <p>A cirurgia aberta não possui tecnologia envolvida e a laparoscopia possui algumas limitações, como a impossibilidade de aproximar de segura</p>
-        </li>
-
-        <li>
-          <img src="<?php echo get_template_directory_uri() ?>/dist/images/cancer-prostata.png" alt="" />
-          <h1 class="noticias-titulo">A robótica é a evidência do futuro da medicina.</h1>
-          <p>A cirurgia aberta não possui tecnologia envolvida e a laparoscopia possui algumas limitações, como a impossibilidade de aproximar de segura</p>
-        </li>
-
-        <li>
-          <img src="<?php echo get_template_directory_uri() ?>/dist/images/cancer-prostata.png" alt="" />
-          <h1 class="noticias-titulo">A robótica é a evidência do futuro da medicina.</h1>
-          <p>A cirurgia aberta não possui tecnologia envolvida e a laparoscopia possui algumas limitações, como a impossibilidade de aproximar de segura</p>
-        </li>
-
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+          <li>
+            <?php $trim = wp_trim_words(get_the_content(), 40); ?>
+            <a href="<?php the_permalink(); ?>">
+              <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" />
+              <h1 class="noticias-titulo"><?php the_title() ?></h1>
+              <p><?php echo $trim; ?> <strong>Ler mais</strong></p>
+            </a>
+          </li>
+        <?php endwhile; endif; wp_reset_query(); ?>
       </ul>
     </div>
   </div>

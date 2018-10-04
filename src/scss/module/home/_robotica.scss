@@ -15,6 +15,7 @@
 .robotica-conteudo p {
   display: flex;
   flex-direction: row;
+  text-align: justify;
 
   @media (min-width:getVP(tablet)){
 
