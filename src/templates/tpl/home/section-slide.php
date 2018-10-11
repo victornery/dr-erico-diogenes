@@ -10,6 +10,12 @@
       <?php endwhile; wp_reset_query(); ?>
       <?php //endforeach; ?>
     </ul>
+    <div class="container">
+    <div class="glide__arrows glide__arrows--blue" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><</button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
+        </div>
+    </div>
   </div>
 </section>
 <aside class="agendamento">

@@ -17,7 +17,7 @@
       </header>
 
       <article class="about-content">
-        <p>Atualmente é médico do serviço de Urooncologia do Instituto do Câncer do Ceará. É médico cirurgião do Instituto Dr José Frota. Certificado Internacional pela Intuitive Surgical para a realização de Cirurgias Robóticas. Médico urologista do corpo clinico do Hospital Monte Klinikum, onde atua com cirurgias robóticas. É pós-graduando (nível doutorado) em Urologia, com linha de pesquisa em tumores de próstata pela Universidade de São Paulo (USP). Possui fellowship em Uro-oncologia no Hospital Sirio Libanês sob orientação do Professor Miguel Srougi. Fellowship em laparoscopia e... <strong><a href="http://clientes.labscreate.com/drerico/cirurgia-robotica/" rel="noopener" style="margin-left: 0px; display: table;">Ler mais</a></strong>
+        <p>Atualmente é médico do serviço de Urooncologia do Instituto do Câncer do Ceará. É médico cirurgião do Instituto Dr José Frota. Certificado Internacional pela Intuitive Surgical para a realização de Cirurgias Robóticas. Médico urologista do corpo clinico do Hospital Monte Klinikum, onde atua com cirurgias robóticas. É pós-graduando (nível doutorado) em Urologia, com linha de pesquisa em tumores de próstata pela Universidade de São Paulo (USP). Possui fellowship em Uro-oncologia no Hospital Sirio Libanês sob orientação do Professor Miguel Srougi. Fellowship em laparoscopia e... <strong style="display: block;"><a href="http://clientes.labscreate.com/drerico/cirurgia-robotica/" class="btn-rm" rel="noopener" style="margin-left: 0; color: #fff; margin-top: 10px;">Ler mais</a></strong>
         </p>
       </article>
     </div>
