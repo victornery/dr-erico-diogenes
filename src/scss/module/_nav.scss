@@ -1,9 +1,7 @@
 .#{$prefix}-header {
-  position: fixed;
+  position: relative;
   width: 100%;
   background: #fff;
-  z-index: 5;
-  top: 0;
   .container {
     display: flex;
     align-items: center;
@@ -130,5 +128,20 @@
 
   .nav {
     visibility: visible;
+  }
+}
+.bar {
+    li {
+    display: inline-block;
+  }
+  .container {
+    background-color:rgba(242,242,242,1);
+  }
+    a {
+    text-decoration: none;
+    color: grey;
+  }
+  img{
+    width:20px;
   }
 }

@@ -23,6 +23,7 @@
     width: 100%;
     max-width: 100%;
     max-height: 220px;
+    border-radius:9px;
   }
 
   a {
@@ -86,4 +87,7 @@
 }
 .noticias {
     padding: 100px 0;
+}
+.text-box{
+  color: grey;
 }

@@ -12,7 +12,7 @@
             <a href="<?php the_permalink(); ?>">
               <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>" />
               <h1 class="noticias-titulo"><?php the_title() ?></h1>
-              <p><?php echo $trim; ?> <strong>Ler mais</strong></p>
+              <p class="text-box"><?php echo $trim; ?> <strong>Ler mais</strong></p>
             </a>
           </li>
         <?php endwhile; endif; wp_reset_query(); ?>
