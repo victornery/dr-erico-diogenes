@@ -95,17 +95,18 @@ function post_type_patologias() {
     );
     register_post_type('patologia', $args);
 }
+
 add_action('init', 'post_type_patologias');
 
-function post_type_convênios() {
+function post_type_convenios() {
     $labels = array(
-        'name' => 'convênios',
-        'singular_name' => 'convênios',
-        'menu_name' => 'convênios',
-        'add_new' => _x('Adicionar convênios', 'item'),
-        'add_new_item' => __('Adicionar Novo convênios'),
-        'edit_item' => __('Editar convênios'),
-        'new_item' => __('Novo convênios')
+        'name' => 'Convênios',
+        'singular_name' => 'Convênios',
+        'menu_name' => 'Convênios',
+        'add_new' => _x('Adicionar Convênio', 'item'),
+        'add_new_item' => __('Adicionar Novo Convênio'),
+        'edit_item' => __('Editar convênio'),
+        'new_item' => __('Novo convênio')
     );
 
     $args = array(
@@ -115,14 +116,14 @@ function post_type_convênios() {
         'show_ui' => true,
         'show_in_menu' => true,
         'query_var' => true,
-        'rewrite' => array('slug' => 'convênios'),
+        'rewrite' => array('slug' => 'convenios'),
         'capability_type' => 'post',
         'has_archive' => true,
         'hierarchical' => true,
         'menu_position' => 6,
         'menu_icon' => 'dashicons-slides',
-        'supports' => array('title', 'thumbnail', 'editor')
+        'supports' => array('title', 'thumbnail')
     );
-    register_post_type('banner', $args);
+    register_post_type('convenio', $args);
 }
-add_action('init', 'post_type_convênios');
+add_action('init', 'post_type_convenios');

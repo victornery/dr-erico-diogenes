@@ -23,7 +23,7 @@ define('WP_CACHE', true); // Added by W3 Total Cache
 
 // ** Configurações do MySQL - Você pode pegar estas informações com o serviço de hospedagem ** //
 /** O nome do banco de dados do WordPress */
-define('DB_NAME', 'drerico');
+define('DB_NAME', 'dr-erico');
 
 /** Usuário do banco de dados MySQL */
 define('DB_USER', 'root');

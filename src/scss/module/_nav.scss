@@ -131,11 +131,16 @@
   }
 }
 .bar {
-    li {
-    display: inline-block;
+  padding: 10px;
+  background-color:rgba(242,242,242,1);
+
+  ul {
+    text-align: right;
   }
-  .container {
-    background-color:rgba(242,242,242,1);
+
+  li {
+    display: inline-block;
+    margin: 0 5px;
   }
     a {
     text-decoration: none;
@@ -144,4 +149,12 @@
   img{
     width:20px;
   }
+}
+
+.header-top {
+  width: 100%;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  display: block;
 }
