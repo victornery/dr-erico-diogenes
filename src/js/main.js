@@ -71,3 +71,15 @@ const handleSliders = () => {
 };
 
 handleSliders();
+
+const handleList = () => {
+  const items = document.querySelectorAll('.patologias__lista li');
+
+  items.forEach(e => {
+    e.addEventListener('click', () => {
+      e.classList.toggle('active');
+    });
+  });
+}
+
+handleList();

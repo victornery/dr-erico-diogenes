@@ -2,23 +2,10 @@
 
   <footer>
 
-  <!-- <div class="modal">
-    <div class="modal-box">
-
-      <div class="modal-close"></div>
-      <?php //echo get_post_field('post_content', $post_id); ?>
-      <h3 class="modal-title">Lista de Selecionados da Oportunize</h3>
-      <p class="modal-subtitle">Confira a Lista de Selecionados na Primeira Fase do Processo Seletivo 2019.</p>
-
-      <div class="modal-content">
-        Teste da Lista de Aprovados!!! :-P
-      </div>
-
-    </div>
-  </div> -->
-
     <div class="global-footer">
       <div class="container">
+
+        <img class="global-footer__logo" src="<?php echo get_template_directory_uri() ?>/dist/images/logo-footer.png" alt="<?php echo bloginfo('name') ?>">
 
         <div class="global-footer__item">
           <h2 class="global-footer__title">Onde estamos</h2>

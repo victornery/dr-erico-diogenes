@@ -70,8 +70,8 @@ add_action('init', 'post_type_banners');
 function post_type_patologias() {
     $labels = array(
         'name' => 'Patologias',
-        'singular_name' => 'patologias',
-        'menu_name' => 'patologias',
+        'singular_name' => 'Patologia',
+        'menu_name' => 'Patologias',
         'add_new' => _x('Adicionar patologia', 'item'),
         'add_new_item' => __('Adicionar Novo patologia'),
         'edit_item' => __('Editar patologia'),
@@ -81,7 +81,6 @@ function post_type_patologias() {
     $args = array(
         'labels' => $labels,
         'public' => true,
-        'publicly_queryable' => false,
         'show_ui' => true,
         'show_in_menu' => true,
         'query_var' => true,
@@ -90,10 +89,10 @@ function post_type_patologias() {
         'has_archive' => true,
         'hierarchical' => true,
         'menu_position' => 6,
-        'menu_icon' => 'dashicons-slides',
+        'menu_icon' => 'dashicons-universal-access',
         'supports' => array('title', 'thumbnail', 'editor')
     );
-    register_post_type('patologia', $args);
+    register_post_type('patologias', $args);
 }
 
 add_action('init', 'post_type_patologias');
@@ -101,7 +100,7 @@ add_action('init', 'post_type_patologias');
 function post_type_convenios() {
     $labels = array(
         'name' => 'Convênios',
-        'singular_name' => 'Convênios',
+        'singular_name' => 'Convênio',
         'menu_name' => 'Convênios',
         'add_new' => _x('Adicionar Convênio', 'item'),
         'add_new_item' => __('Adicionar Novo Convênio'),
@@ -121,7 +120,7 @@ function post_type_convenios() {
         'has_archive' => true,
         'hierarchical' => true,
         'menu_position' => 6,
-        'menu_icon' => 'dashicons-slides',
+        'menu_icon' => 'dashicons-groups',
         'supports' => array('title', 'thumbnail')
     );
     register_post_type('convenio', $args);

@@ -8,11 +8,13 @@
 
     @media (min-width: getVP(tablet)) {
       flex-direction: row;
+      justify-content: space-between;
     }
   }
 
   @include e('item') {
     width: 100%;
+    text-align: center;
 
     address {
       line-height: 1.5;
@@ -26,7 +28,17 @@
     }
 
     @media (min-width: getVP(tablet)) {
-      width: 50%;
+      width: calc(100% / 3);
+    }
+  }
+
+  @include e('logo') {
+    width: 150px;
+    object-fit: contain;
+    align-self: center;
+
+    @media (min-width: getVP(tablet)) {
+      align-self: flex-start;
     }
   }
 
@@ -47,11 +59,14 @@
     width: 100%;
     display: block;
     line-height: 1.5;
+    text-align: center;
+    margin: 5px 0;
 
     @media (min-width: getVP(tablet)) {
       display: inline-block;
       width: 49%;
       margin: 0;
+      text-align: left;
       padding: 0;
     }
 

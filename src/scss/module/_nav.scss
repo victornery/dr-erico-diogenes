@@ -78,7 +78,7 @@
     letter-spacing: 1px;
 
     @media (min-width: getVP(tablet)) {
-      padding: 0 5px;
+      padding: 0 8px;
       font-size: 14px;
     }
 
@@ -138,19 +138,35 @@
   background-color:rgba(242,242,242,1);
 
   ul {
-    text-align: right;
+    text-align: center;
+
+    @media (min-width: getVP(tablet)) {
+      text-align: right;
+    }
   }
 
   li {
     display: inline-block;
     margin: 0 5px;
+
+    &:last-child {
+      margin-top: 8px;
+
+      @media (min-width: getVP(tablet)) {
+        margin-top: 0;
+      }
+    }
   }
-    a {
+
+  a {
     text-decoration: none;
     color: grey;
+    display: inline-block;
   }
-  img{
-    width:20px;
+
+  img {
+    height: 18px;
+    max-width: 30px;
   }
 }
 

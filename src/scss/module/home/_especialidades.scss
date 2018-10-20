@@ -1,8 +1,12 @@
-.especialidades-topicos a{
-  text-decoration: none;
-  color:black;
-}
-.especialidades-topicos h2{
+.especialidades-topicos {
+  width: 100%;
+
+  a {
+    text-decoration: none;
+    color:black;
+  }
+
+  h2 {
     background: rgb(128, 128, 131);
     padding: 28px 42px;
     display: inline-block;
@@ -20,30 +24,32 @@
     @media (min-width: getVP(tablet)) {
       padding: 28px 83px;
     }
-}
-.especialidades-topicos li{
+  }
+
+  ul {
+    @media (min-width:getVP(tablet)){
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  li {
     max-width: 100%;
     display: inline-block;
     margin: 0 auto !important;
     text-align: center;
-}
-.especialidades-topicos img{
-    width: 203px !important;
-    height: 198px !important;
+  }
+
+  img {
+    width: 203px;
+    height: 198px;
     border-radius: 100%;
     border-style: double;
     border-color: rgb(224, 224, 224);
     border-width: 4px;
-}
-.especialidades-topicos ul{
-
-  @media (min-width:getVP(tablet)){
-    display: flex;
-    justify-content: space-around;
   }
-}
 
-.especialidades-topicos p{
+  p {
     display: flex;
     justify-content: space-around;
     margin-top: 15px;
@@ -52,9 +58,7 @@
     letter-spacing: 1px;
     line-height: 1.5;
     text-align: center;
-}
-.especialidades-topicos{
-    width: 100%;
+  }
 }
 
 .especialidades-carrosel,
@@ -163,7 +167,6 @@
   position: relative;
 }
 
-
 /* CONVENIOS */
 
 .convenios {
@@ -194,4 +197,90 @@
       color: #fff;
     }
   }
+}
+
+.patologias__lista {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+
+  .item-title {
+    background: #ececec;
+    padding: 15px;
+    border-radius: 5px;
+  }
+
+  .item-name {
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-left: 20px;
+  }
+
+  .item-icon {
+    display: inline-block;
+    position: relative;
+    margin-left: 0;
+
+    &::before {
+      content: "";
+      border-bottom: 4px solid #244359;
+      border-right: 4px solid #244359;
+      display: block;
+      width: 13px;
+      height: 13px;
+      border-radius: 2px;
+      transition: all .3s ease;
+      transform: translateY(-3px) rotate(45deg);
+      pointer-events: none;
+    }
+  }
+
+  .item-info {
+    display: none;
+    margin: 0;
+    letter-spacing: 1px;
+    font-size: 15px;
+
+    opacity: 0;
+    height: 0;
+    max-height: 200px;
+
+    transition: .5s all;
+  }
+
+  .active {
+    .item-icon::before {
+      transform: translateY(0) rotate(-135deg);
+    }
+
+    .item-info {
+      display: block;
+      opacity: 1;
+      height: 100%;
+    }
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li {
+    flex-basis: 100%;
+    margin: 10px 0;
+
+    @media (min-width: getVP(tablet)) {
+      flex-basis: calc((100% / 3) - 15px);
+      margin: 15px 15px 5px 0;
+    }
+  }
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.wpp-img {
+  margin-left: 10px;
 }
