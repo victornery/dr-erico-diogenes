@@ -16,6 +16,11 @@
     width: 100%;
     text-align: center;
 
+    @media (min-width: getVP(tablet)) {
+      text-align: left;
+      width: calc(100% / 3);
+    }
+
     address {
       line-height: 1.5;
       margin: 15px 0;
@@ -25,10 +30,6 @@
       font: {
         style: normal;
       }
-    }
-
-    @media (min-width: getVP(tablet)) {
-      width: calc(100% / 3);
     }
   }
 
@@ -64,7 +65,6 @@
 
     @media (min-width: getVP(tablet)) {
       display: inline-block;
-      width: 49%;
       margin: 0;
       text-align: left;
       padding: 0;
