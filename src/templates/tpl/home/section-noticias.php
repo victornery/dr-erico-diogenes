@@ -6,7 +6,7 @@
         <p class="blog-box">Blog</p>
       </div>
       <ul>
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+        <?php query_posts('showposts=3'); if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
           <li>
             <?php $trim = wp_trim_words(get_the_content(), 40); ?>
             <a href="<?php the_permalink(); ?>">
