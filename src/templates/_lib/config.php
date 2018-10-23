@@ -57,6 +57,10 @@ if (is_admin()) {
   require_once RWMBC_DIR . 'settings.php';
 }
 
+/* DANDO SUPORTE A TITLE-TAG */
+
+add_theme_support( 'title-tag' );;
+
 /*
  * Alterando o Excerpt padrão
  */
