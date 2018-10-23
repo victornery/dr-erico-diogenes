@@ -48,16 +48,21 @@
 
 .whatsapp-icon {
   display: none;
-
-  transform: scale(2);
-  padding: 13px;
   width: 57px;
   height: 57px;
-  background-color: rgba(79,120,26,1);
+  transform: scale(2);
+  padding: 17px;
+  background-color: #4f781a;
   border-radius: 50%;
 
   @media (min-width: getVP(tablet)) {
     display: block;
+  }
+
+  img {
+    width: 20px;
+    height: 20px;
+    transform: scale(1.5);
   }
 }
 

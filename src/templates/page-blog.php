@@ -3,7 +3,8 @@
 <section class="d-page">
   <div class="container">
     <h1>Blog</h1>
-    <ul class="especialidades__lista">
+    <div class="ultimas-noticias">
+    <ul>
       <?php $theposts = new WP_Query(array('post_type' => 'post', 'posts_per_page' => -1)); ?>
       <?php if ($theposts->have_posts()) : while ($theposts->have_posts()): $theposts->the_post() ?>
         <li>
@@ -16,6 +17,7 @@
         </li>
       <?php endwhile; endif; wp_reset_postdata(); ?>
     </ul>
+    </div>
   </div>
 </section>
 
