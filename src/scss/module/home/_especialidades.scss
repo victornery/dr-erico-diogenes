@@ -1,5 +1,10 @@
 .especialidades-topicos {
   width: 100%;
+  text-align: center;
+
+  @media (min-width: getVP(tablet)) {
+    text-align: left;
+  }
 
   a {
     text-decoration: none;
@@ -8,21 +13,21 @@
 
   h2 {
     background: rgb(128, 128, 131);
-    padding: 28px 42px;
+    padding: 20px;
     display: inline-block;
     color: white;
     letter-spacing: 9px;
 
     position: relative;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
     margin: 38px auto;
 
     max-width: 100%;
 
     @media (min-width: getVP(tablet)) {
       padding: 28px 83px;
+      top: 20%;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 
@@ -178,12 +183,14 @@
 }
 
 .glide__arrows {
-  display: flex;
+  display: none;
+
   width: 100%;
   justify-content: space-between;
   position: absolute;
   top: 35%;
   transform: translateY(-35%);
+
   button {
     background: transparent;
     width: 35px;

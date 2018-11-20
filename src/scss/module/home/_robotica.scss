@@ -4,12 +4,13 @@
     background-position: center right ;
     background-repeat: no-repeat;
     object-fit: cover;
+    padding: 20px 0;
 
-    height: 556px;
 
     @media (min-width: getVP(tablet)) {
       background-image: url(../images/robo.png);
-
+      height: 556px;
+      padding: 0;
     }
 }
 .robotica-conteudo p {
