@@ -25,7 +25,7 @@ const handleSliders = () => {
 
   if (document.querySelector(highlight)) {
     new Glide(highlight, {
-      type: 'slider',
+      type: 'carousel',
       startAt: 0,
       perView: 1,
       autoplay: 3000,
@@ -35,7 +35,7 @@ const handleSliders = () => {
 
   if (document.querySelector(especialidades)) {
     new Glide(especialidades, {
-      type: 'slider',
+      type: 'carousel',
       startAt: 0,
       perView: 4,
       autoplay: 3000,
@@ -53,7 +53,7 @@ const handleSliders = () => {
 
   if (document.querySelector(convenios)) {
     new Glide(convenios, {
-      type: 'slider',
+      type: 'carousel',
       startAt: 0,
       perView: 4,
       autoplay: 3000,

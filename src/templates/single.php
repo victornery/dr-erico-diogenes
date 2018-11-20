@@ -13,8 +13,12 @@
   </div>
 </section>
 <?php if(is_singular('especialidades')): ?>
+  <div class="video-especialidades">
+    <div class="container">
+      <iframe width="100%" height="415" src="https://www.youtube.com/embed/2uInoD59WOY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
   <div class="container">
-  <iframe width="100%" height="315" src="https://www.youtube.com/embed/2uInoD59WOY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   <div class="especialidades-topicos">
   <h3 style="font-weight: 300; text-transform: uppercase; font-size: 28px; margin-bottom: 30px;">Confira mais especialidades</h2>
   <div class="especialidades-carrosel">
